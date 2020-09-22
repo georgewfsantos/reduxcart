@@ -1,6 +1,6 @@
 import { IProduct } from "./types";
 
-export function addProductToCart(product: IProduct) {
+export function addProductToCartRequest(product: IProduct) {
   return {
     type: "ADD_PRODUCT_TO_CART_REQUEST",
     payload: {
@@ -9,7 +9,7 @@ export function addProductToCart(product: IProduct) {
   };
 }
 
-export function addProductToCartRequest(product: IProduct) {
+export function addProductToCartSuccess(product: IProduct) {
   return {
     type: "ADD_PRODUCT_TO_CART_SUCCESS",
     payload: {
